@@ -1,0 +1,31 @@
+add service and start a service permanent
+
+[Unit]
+Description=Prometheus Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/prometheus/prometheus --config.file=/usr/local/bin/prometheus/prometheus.yml
+
+[Install]
+WantedBy=multi-user.target
+
+
+INSTALL APACHE SERVER TO CLIENT YML FILE 
+
+---
+- hosts: slave1
+  become: yes
+
+  tasks:
+    - name: Install Apache
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache
+      service:
+        name: httpd
+        state: started
+        enabled: yes

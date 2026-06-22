@@ -1,0 +1,15 @@
+Project Title:
+Infrastructure Automation and Monitoring using Ansible, Prometheus and Grafana
+
+Technologies Used:
+Linux, Ansible, Prometheus, Grafana, Node Exporter, Apache HTTP Server, SSH, YAML
+
+Project Description:
+
+Designed and implemented a centralized monitoring and automation solution using Ansible, Prometheus and Grafana.
+Configured an Ansible control node to manage multiple Linux servers through passwordless SSH authentication.
+Automated Node Exporter deployment and service management on multiple Linux servers using Ansible Playbooks.
+Deployed Apache HTTP Server on managed nodes and monitored server health and performance metrics.
+Configured Prometheus to scrape metrics from Node Exporter endpoints across multiple servers.
+Built Grafana dashboards for real-time visualization of CPU, Memory, Disk, Network and System performance metrics.
+Implemented centralized monitoring architecture to improve infrastructure visibility and operational efficiency.
